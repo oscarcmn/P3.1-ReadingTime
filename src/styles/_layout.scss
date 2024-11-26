@@ -12,15 +12,29 @@ main{
     .seccionlibros{
         margin-top: $margin-top;
         text-align: center;
-    }
-    .galeria{
-        display: flex;
-        justify-content: center;
-        gap: 41px;
-        .imagenes{
-            width: 178px;
-            height: 267px;
+    
+        .galeria{
+            display: flex;
+            justify-content: center;
+            gap: 41px;
+            .imagenes{
+                width: 178px;
+                height: 267px;
            
+            }
+        }
+    }
+    .seccionautor{
+        .autor{
+            display: flex;
+            .sanderson{
+                width: 250px; 
+                height: 250px;
+                border-radius: 50%; 
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                overflow: hidden;
+               
+            }
         }
     }
 }
