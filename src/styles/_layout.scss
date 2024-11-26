@@ -1,0 +1,26 @@
+@use "globals" as *; // Importa todo desde globals
+
+body{
+    margin: 0;
+    padding: 0;
+    color: $text-color;
+}
+
+main{
+    padding-left: $container;
+    padding-right: $container;
+    .seccionlibros{
+        margin-top: $margin-top;
+        text-align: center;
+    }
+    .galeria{
+        display: flex;
+        justify-content: center;
+        gap: 41px;
+        .imagenes{
+            width: 178px;
+            height: 267px;
+           
+        }
+    }
+}

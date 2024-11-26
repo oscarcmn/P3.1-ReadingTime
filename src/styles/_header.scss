@@ -1,0 +1,31 @@
+@use "globals" as *;
+
+header{
+    background-color: $background-header;
+    .container{
+        padding-left: $container;
+        padding-right: $container;
+        display: flex;
+        align-items: center;
+        gap: 121px;
+        
+        .titulo{
+            font-family: $copperplate-h1-font-family;
+            font-weight: $copperplate-h1-font-weight;
+            font-size: $copperplate-h1-font-size;
+            letter-spacing: $copperplate-h1-letter-spacing;
+            line-height: $copperplate-h1-line-height;
+            font-style: $copperplate-h1-font-style;
+        }
+        .grupobotones{
+            padding-left: 121px;
+            display: flex;
+            gap: 34px;
+            .botones{
+                height: 56px;
+                width: 127px;
+            }
+        }
+    }
+    
+}
