@@ -2,4 +2,28 @@
 
 footer{
     background-color: $background-header;
+    
+    .pie{
+        padding-left: $container;
+        padding-right: $container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 139px;
+        .txtfinal{
+            
+            font-weight: $bookshelf-symbol-h3-font-weight;
+            font-size: $bookshelf-symbol-h3-font-size;
+            letter-spacing: $bookshelf-symbol-h3-letter-spacing;
+            line-height: $bookshelf-symbol-h3-line-height;
+        }
+        .iconos{
+            display: flex;
+            gap: 24px;
+            color: $black;
+            .fa{
+                font-size: 60px;
+            }
+        }
+    }
 }
