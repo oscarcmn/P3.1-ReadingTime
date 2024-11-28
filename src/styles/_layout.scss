@@ -12,7 +12,14 @@ main {
   .seccionlibros {
     margin-top: $margin-top;
     text-align: center;
-
+    .titulogaleria {
+      font-weight: $bookshelf-symbol-h2-font-weight;
+      font-size: $bookshelf-symbol-h2-font-size;
+      letter-spacing: $bookshelf-symbol-h2-letter-spacing;
+      line-height: $bookshelf-symbol-h2-line-height;
+      margin: 0;
+      margin-bottom: 20px;
+    }
     .galeria {
       display: flex;
       justify-content: center;
@@ -24,6 +31,12 @@ main {
     }
   }
   .seccionautor {
+    .recomendado {
+      font-weight: $bookshelf-symbol-h2-font-weight;
+      font-size: $bookshelf-symbol-h2-font-size;
+      letter-spacing: $bookshelf-symbol-h2-letter-spacing;
+      line-height: $bookshelf-symbol-h2-line-height;
+    }
     .autor {
       display: flex;
       .sanderson {
@@ -40,9 +53,42 @@ main {
 section {
   .cuestionario {
     width: 60%;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     position: relative;
     left: 20%;
+    h1 {
+      font-size: $copperplate-h1-font-size;
+      letter-spacing: $copperplate-h1-letter-spacing;
+      line-height: $copperplate-h1-line-height;
+      font-style: $copperplate-h1-font-style;
+      margin: 0;
+      text-align: center;
+    }
+
+    .centrarboton {
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
+}
+
+label {
+  font-weight: $bookshelf-symbol-h2-font-weight;
+  font-size: $bookshelf-symbol-h2-font-size;
+  letter-spacing: $bookshelf-symbol-h2-letter-spacing;
+  line-height: $bookshelf-symbol-h2-line-height;
+}
+input {
+  width: 388px;
+  height: 50px;
+  color: $text-color;
+  border-radius: 4px;
+  border-color: $text-color;
+  margin-bottom: 40px;
+}
+.terms {
+  font-weight: $bookshelf-symbol-h3-font-weight;
+  font-size: $bookshelf-symbol-h3-font-size;
+  letter-spacing: $bookshelf-symbol-h3-letter-spacing;
+  line-height: $bookshelf-symbol-h3-line-height;
 }
