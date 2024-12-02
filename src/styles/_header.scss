@@ -9,9 +9,15 @@ header {
     display: flex;
     align-items: center;
     gap: 100px;
+    flex-wrap: wrap;
 
+    @include respond-to-medium {
+      padding-left: 10px;
+
+      gap: 20px;
+      justify-content: center;
+    }
     @include respond-to-small {
-      flex-direction: column;
       padding-left: 10px;
       padding-right: 10px;
       gap: 20px;
@@ -24,10 +30,19 @@ header {
       letter-spacing: $copperplate-h1-letter-spacing;
       line-height: $copperplate-h1-line-height;
       font-style: $copperplate-h1-font-style;
-
       @include respond-to-small {
-        font-size: 1.5rem;
-        text-align: center;
+        max-width: 180px;
+      }
+      p {
+        @include respond-to-small {
+          text-align: center;
+          font-family: $copperplate-mobile-font-family;
+          font-weight: $copperplate-mobile-font-weight;
+          font-size: $copperplate-mobile-font-size;
+          letter-spacing: $copperplate-mobile-letter-spacing;
+          line-height: $copperplate-mobile-line-height;
+          font-style: $copperplate-mobile-font-style;
+        }
       }
     }
 
@@ -37,7 +52,8 @@ header {
       gap: 34px;
 
       @include respond-to-small {
-        padding-left: 0;
+        width: 300px;
+        padding-left: 15%;
         gap: 15px;
       }
 

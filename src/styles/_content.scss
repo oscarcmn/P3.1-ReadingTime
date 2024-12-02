@@ -73,7 +73,8 @@
       font-size: $bookshelf-symbol-h3-font-size;
       letter-spacing: $bookshelf-symbol-h3-letter-spacing;
       line-height: $bookshelf-symbol-h3-line-height;
-
+      width: 80%;
+      padding-left: 40px;
       @include respond-to-small {
         text-align: center;
         padding: 10px;
