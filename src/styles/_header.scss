@@ -1,27 +1,50 @@
 @use "globals" as *;
 
-header{
-    background-color: $background-header;
-    .container{
-        padding-left: $container;
-        padding-right: $container;
-        display: flex;
-        align-items: center;
-        gap: 100px;
-        
-        .titulo{
-            font-family: $copperplate-h1-font-family;
-            font-weight: $copperplate-h1-font-weight;
-            font-size: $copperplate-h1-font-size;
-            letter-spacing: $copperplate-h1-letter-spacing;
-            line-height: $copperplate-h1-line-height;
-            font-style: $copperplate-h1-font-style;
-        }
-        .grupobotones{
-            padding-left: 121px;
-            display: flex;
-            gap: 34px;
-        }
+header {
+  background-color: $background-header;
+
+  .container {
+    padding-left: $container;
+    padding-right: $container;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    @include respond-to-small {
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+      gap: 20px;
     }
-    
+
+    .titulo {
+      font-family: $copperplate-h1-font-family;
+      font-weight: $copperplate-h1-font-weight;
+      font-size: $copperplate-h1-font-size;
+      letter-spacing: $copperplate-h1-letter-spacing;
+      line-height: $copperplate-h1-line-height;
+      font-style: $copperplate-h1-font-style;
+
+      @include respond-to-small {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+
+    .grupobotones {
+      padding-left: 121px;
+      display: flex;
+      gap: 34px;
+
+      @include respond-to-small {
+        padding-left: 0;
+        gap: 15px;
+      }
+
+      @include respond-to-medium {
+        padding-left: 60px;
+        gap: 20px;
+      }
+    }
+  }
 }

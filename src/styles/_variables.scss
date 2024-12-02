@@ -1,10 +1,10 @@
 @font-face {
-    font-family: Copperplate;
-    src: url(../assets/fonts/7489-fontps.ttf);
+  font-family: Copperplate;
+  src: url(../assets/fonts/7489-fontps.ttf);
 }
 @font-face {
-    font-family: Bookshelf-Symbol-7;
-    src: url(../assets/fonts/Bookshelf-Symbol-7-Regular.ttf);
+  font-family: Bookshelf-Symbol-7;
+  src: url(../assets/fonts/Bookshelf-Symbol-7-Regular.ttf);
 }
 
 $bookshelf-symbol-h2-font-family: "Bookshelf-Symbol-7", Helvetica;
@@ -45,7 +45,7 @@ $copperplate-mobile-line-height: normal;
 $copperplate-mobile-font-style: normal;
 
 $background-header: rgb(255, 209, 127);
-$black: rgb(0, 0, 0); 
+$black: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
 $background-button: rgb(155, 211, 75);
 $text-color: rgb(67, 94, 28);

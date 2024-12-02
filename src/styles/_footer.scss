@@ -1,29 +1,50 @@
 @use "globals" as *;
 
-footer{
-    background-color: $background-header;
-    
-    .pie{
-        padding-left: $container;
-        padding-right: $container;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 139px;
-        .txtfinal{
-            
-            font-weight: $bookshelf-symbol-h3-font-weight;
-            font-size: $bookshelf-symbol-h3-font-size;
-            letter-spacing: $bookshelf-symbol-h3-letter-spacing;
-            line-height: $bookshelf-symbol-h3-line-height;
-        }
-        .iconos{
-            display: flex;
-            gap: 24px;
-            color: $black;
-            .fa{
-                font-size: 60px;
-            }
-        }
+footer {
+  background-color: $background-header;
+
+  .pie {
+    padding-left: $container;
+    padding-right: $container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 139px;
+
+    @include respond-to-small {
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      height: auto;
     }
+
+    .txtfinal {
+      font-weight: $bookshelf-symbol-h3-font-weight;
+      font-size: $bookshelf-symbol-h3-font-size;
+      letter-spacing: $bookshelf-symbol-h3-letter-spacing;
+      line-height: $bookshelf-symbol-h3-line-height;
+
+      @include respond-to-small {
+      }
+    }
+
+    .iconos {
+      display: flex;
+      gap: 24px;
+      color: $black;
+
+      @include respond-to-small {
+        justify-content: center;
+      }
+
+      .fa {
+        font-size: 60px;
+
+        @include respond-to-small {
+          font-size: 50px;
+        }
+      }
+    }
+  }
 }

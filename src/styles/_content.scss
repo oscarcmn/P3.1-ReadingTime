@@ -1,0 +1,126 @@
+@use "globals" as *;
+
+.seccionlibros {
+  margin-top: $margin-top;
+  text-align: center;
+
+  .titulogaleria {
+    font-weight: $bookshelf-symbol-h2-font-weight;
+    font-size: $bookshelf-symbol-h2-font-size;
+    letter-spacing: $bookshelf-symbol-h2-letter-spacing;
+    line-height: $bookshelf-symbol-h2-line-height;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include respond-to-small {
+      font-size: 1.2rem;
+    }
+  }
+
+  .galeria {
+    display: flex;
+    justify-content: center;
+    gap: 41px;
+
+    flex-wrap: wrap;
+
+    .imagenes {
+      width: 178px;
+      height: 267px;
+      @include respond-to-small {
+        width: 145px;
+        height: 215px;
+      }
+    }
+  }
+}
+
+.seccionautor {
+  .recomendado {
+    font-weight: $bookshelf-symbol-h2-font-weight;
+    font-size: $bookshelf-symbol-h2-font-size;
+    letter-spacing: $bookshelf-symbol-h2-letter-spacing;
+    line-height: $bookshelf-symbol-h2-line-height;
+
+    @include respond-to-small {
+      font-size: 1.2rem;
+    }
+  }
+
+  .autor {
+    display: flex;
+
+    @include respond-to-small {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sanderson {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+
+      @include respond-to-small {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    .descripcion {
+      font-weight: $bookshelf-symbol-h3-font-weight;
+      font-size: $bookshelf-symbol-h3-font-size;
+      letter-spacing: $bookshelf-symbol-h3-letter-spacing;
+      line-height: $bookshelf-symbol-h3-line-height;
+
+      @include respond-to-small {
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+section {
+  .cuestionario {
+    width: 60%;
+    align-items: center;
+    position: relative;
+    left: 20%;
+
+    @include respond-to-small {
+      width: 90%;
+      left: 5%;
+    }
+
+    h1 {
+      font-size: $copperplate-h1-font-size;
+      letter-spacing: $copperplate-h1-letter-spacing;
+      line-height: $copperplate-h1-line-height;
+      font-style: $copperplate-h1-font-style;
+      margin: 0;
+      text-align: center;
+
+      @include respond-to-small {
+        font-size: 1.5rem;
+      }
+    }
+
+    .centrarboton {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.terms {
+  font-weight: $bookshelf-symbol-h3-font-weight;
+  font-size: $bookshelf-symbol-h3-font-size;
+  letter-spacing: $bookshelf-symbol-h3-letter-spacing;
+  line-height: $bookshelf-symbol-h3-line-height;
+
+  @include respond-to-small {
+    font-size: 0.9rem;
+  }
+}
