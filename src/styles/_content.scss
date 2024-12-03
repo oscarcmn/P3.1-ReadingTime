@@ -46,6 +46,7 @@
     line-height: $bookshelf-symbol-h2-line-height;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 20px;
     @include respond-to-small {
       font-weight: $bookshelf-symbol-h3-font-weight;
       font-size: $bookshelf-symbol-h3-font-size;
@@ -57,13 +58,17 @@
   .autor {
     display: flex;
     align-items: center;
+    padding-left: 65px;
+    padding-bottom: 35px;
     @include respond-to-small {
       flex-direction: column;
       align-items: center;
+      padding-left: 0;
     }
     @include respond-to-medium {
       flex-direction: column;
       align-items: center;
+      padding-left: 0;
     }
 
     .sanderson {
@@ -89,6 +94,10 @@
       @include respond-to-small {
         padding: 10px;
         width: 90%;
+        font-weight: $bookshelf-symbol-h4-font-weight;
+        font-size: $bookshelf-symbol-h4-font-size;
+        letter-spacing: $bookshelf-symbol-h4-letter-spacing;
+        line-height: $bookshelf-symbol-h4-line-height;
       }
     }
   }
@@ -106,17 +115,15 @@ section {
       left: 5%;
     }
 
-    h1 {
-      font-size: $copperplate-h1-font-size;
-      letter-spacing: $copperplate-h1-letter-spacing;
-      line-height: $copperplate-h1-line-height;
-      font-style: $copperplate-h1-font-style;
+    .cuenta {
+      font-weight: $bookshelf-symbol-h2-font-weight;
+      font-size: $bookshelf-symbol-h2-font-size;
+      letter-spacing: $bookshelf-symbol-h3-letter-spacing;
+      line-height: $bookshelf-symbol-h3-line-height;
       margin: 0;
       text-align: center;
-
-      @include respond-to-small {
-        font-size: 1.5rem;
-      }
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .centrarboton {

@@ -21,7 +21,15 @@ header {
       padding-right: 15px;
       gap: 20px;
     }
-
+    .logo {
+      padding-left: 40px;
+      @include respond-to-medium {
+        padding-left: 0;
+      }
+      @include respond-to-small {
+        padding-left: 0;
+      }
+    }
     .titulo {
       font-family: $copperplate-h1-font-family;
       font-weight: $copperplate-h1-font-weight;
@@ -47,20 +55,21 @@ header {
     }
 
     .grupobotones {
-      padding-left: 121px;
+      padding-left: 81px;
       display: flex;
       gap: 34px;
 
       @include respond-to-small {
         width: 300px;
-        padding-left: 15%;
+        padding-left: 0;
         gap: 15px;
         padding-bottom: 20px;
       }
 
       @include respond-to-medium {
-        padding-left: 60px;
+        padding-left: 13px;
         gap: 20px;
+        padding-bottom: 20px;
       }
     }
   }

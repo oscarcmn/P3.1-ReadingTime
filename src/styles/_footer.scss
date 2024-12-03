@@ -24,8 +24,12 @@ footer {
       font-size: $bookshelf-symbol-h3-font-size;
       letter-spacing: $bookshelf-symbol-h3-letter-spacing;
       line-height: $bookshelf-symbol-h3-line-height;
-
+      padding-left: 60px;
+      @include respond-to-medium {
+        padding-left: 40px;
+      }
       @include respond-to-small {
+        padding-left: 0;
       }
     }
 
@@ -33,9 +37,10 @@ footer {
       display: flex;
       gap: 24px;
       color: $black;
-
+      padding-right: 60px;
       @include respond-to-small {
         justify-content: center;
+        padding-right: 0;
       }
 
       .fa {
