@@ -12,5 +12,5 @@ export default defineConfig({
       },
     },
   },
-  base: "/P3.1-ReadingTime",
+  base: "/P3.1-ReadingTime/",
 });
