@@ -89,3 +89,6 @@ Este documento analiza el diseño de la página web Reading Time, proporcionando
 
 El diseño de Reading Time refleja una atención cuidada a la experiencia del usuario, combinando una estética atractiva con funcionalidad clara. La transición entre las versiones de escritorio y móvil es fluida, manteniendo consistencia visual y adaptabilidad.
 
+
+#### Enlace a la web
+https://oscarcmn.github.io/P3.1-ReadingTime/
