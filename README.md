@@ -12,6 +12,7 @@ DIW
 **Título de la Práctica**:  
 Reading Time  
 
+---
 
 ## Tabla de Contenidos
 
@@ -29,7 +30,7 @@ Reading Time
 
 ## Introducción
 
-Este documento analiza el diseño de la página web *Reading Time*, proporcionando un análisis detallado sobre sus decisiones de diseño, tanto para la versión de escritorio como para la móvil. Se incluyen aspectos relacionados con la experiencia de usuario, usabilidad y adaptabilidad.
+Este documento analiza el diseño de la página web Reading Time, proporcionando un análisis detallado sobre sus decisiones de diseño, tanto para la versión de escritorio como para la móvil. Se incluyen aspectos relacionados con la experiencia de usuario, usabilidad y adaptabilidad.
 
 ## Análisis del Diseño
 
@@ -86,5 +87,5 @@ Este documento analiza el diseño de la página web *Reading Time*, proporcionan
 
 ## Conclusión
 
-El diseño de *Reading Time* refleja una atención cuidada a la experiencia del usuario, combinando una estética atractiva con funcionalidad clara. La transición entre las versiones de escritorio y móvil es fluida, manteniendo consistencia visual y adaptabilidad.
+El diseño de Reading Time refleja una atención cuidada a la experiencia del usuario, combinando una estética atractiva con funcionalidad clara. La transición entre las versiones de escritorio y móvil es fluida, manteniendo consistencia visual y adaptabilidad.
 
